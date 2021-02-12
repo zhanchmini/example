@@ -1,6 +1,6 @@
 {
     "name": "zhanchmini/example",
-    "description": "zhanchmini mini example",
+    "description": "Minimal development of multiple development example",
     "type": "library",
     "license": "MIT",
     "authors": [
