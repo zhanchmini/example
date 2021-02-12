@@ -8,6 +8,7 @@ use yii\filters\VerbFilter;
 use yii\filters\auth\CompositeAuth;
 use yii\filters\ContentNegotiator;
 use yii\filters\RateLimiter;
+use zhanchmini\example\yii2\actions\IndexAction;
 
 class ExampleController extends Controller
 {
@@ -18,7 +19,7 @@ class ExampleController extends Controller
     {
         return [
             'contentNegotiator' => [
-                'class' => ContentNegotiator::className(),
+                'class' => ContentNegotiator::class,
                 'formats' => [
                     'application/json' => Response::FORMAT_JSON,
                     'text/html' => Response::FORMAT_JSON,
@@ -26,14 +27,14 @@ class ExampleController extends Controller
                 ],
             ],
             'verbFilter' => [
-                'class' => VerbFilter::className(),
+                'class' => VerbFilter::class,
                 'actions' => $this->verbs(),
             ],
             'authenticator' => [
-                'class' => CompositeAuth::className(),
+                'class' => CompositeAuth::class,
             ],
             'rateLimiter' => [
-                'class' => RateLimiter::className(),
+                'class' => RateLimiter::class,
             ],
         ];
     }
@@ -45,7 +46,7 @@ class ExampleController extends Controller
     {
         return [
             'index' => [
-                'class' => 'zhanchmini\example\yii2\actions\IndexAction',
+                'class' => IndexAction::class,
             ],
         ];
     }

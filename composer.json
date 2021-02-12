@@ -1,11 +1,11 @@
 {
     "name": "zhanchmini/example",
-    "description": "zhanchmini minimum example",
+    "description": "zhanchmini mini example",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "ChangHai Zhan",
+            "name": "ChangHaiZhan",
             "email": "761324952@qq.com"
         }
     ],

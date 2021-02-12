@@ -5,20 +5,20 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "{{%zhanchmini_example}}".
+ * This is the model class for table "{{%example}}".
  *
  * @property int $id
  * @property string $title 标题
  * @property string|null $content 内容
  */
-class ZhanchminiExample extends \yii\db\ActiveRecord
+class Example extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return '{{%zhanchmini_example}}';
+        return '{{%example}}';
     }
 
     /**

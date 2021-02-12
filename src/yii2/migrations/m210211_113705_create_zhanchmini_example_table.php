@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%zhanchmini_example}}`.
+ * Handles the creation of table `{{%example}}`.
  */
-class m210211_113705_create_zhanchmini_example_table extends Migration
+class m210211_113705_create_example_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%zhanchmini_example}}', [
+        $this->createTable('{{%example}}', [
             'id' => $this->primaryKey(),
             'title' => $this->string()->notNull()->defaultValue('')->comment('标题'),
             'content' => $this->text()->comment('内容'),
@@ -24,6 +24,6 @@ class m210211_113705_create_zhanchmini_example_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%zhanchmini_example}}');
+        $this->dropTable('{{%example}}');
     }
 }
