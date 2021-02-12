@@ -10,7 +10,7 @@ class IndexAction extends Action
     /**
      * Runs the action
      *
-     * @return array
+     * @return string
      */
     public function run()
     {

@@ -5,12 +5,10 @@ namespace zhanchmini\example\common;
 class Index
 {
     /**
-     * @return array
+     * @return string
      */
     public function run()
     {
-        return [
-            'Hello World!'
-        ];
+        return 'Hello World!';
     }
 }
