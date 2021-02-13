@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace zhanchmini\example\yii2\models;
 
 use Yii;
 
